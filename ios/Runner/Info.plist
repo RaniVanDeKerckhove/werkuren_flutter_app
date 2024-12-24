@@ -2,8 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIBackgroundModes</key>
+	<array>
+        <string>fetch</string>
+        <string>remote-notification</string>
+	</array>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
+
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Your app needs location access to track your work hours.</string>
+	<!-- Add this if you need location access in the background -->
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Your app needs location access even when it is in the background to track your work hours.</string>
+
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
